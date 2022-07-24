@@ -12,30 +12,42 @@ public class TwoDimensionalArray {
 			}
 		}
 	}
-	
-	
+
 	// Inserting value in the Array
 	public void insertValueInTheArray(int row, int col, int value) {
 		try {
-			if(arr[row][col] == Integer.MIN_VALUE) {
+			if (arr[row][col] == Integer.MIN_VALUE) {
 				arr[row][col] = value;
 				System.out.println("The value is succesfully inserted");
 			} else {
 				System.out.println("This cell is already occupied");
 			}
-		}catch(ArrayIndexOutOfBoundsException e){
+		} catch (ArrayIndexOutOfBoundsException e) {
 			System.out.println("Invalid index for 2D array");
 		}
 	}
-	
+
 	// Traverse 2D Array
 	public void traverse2DArray() {
-		for(int row = 0; row < arr.length; row++) {
-			for(int col = 0; col < arr[0].length; col++) {
+		for (int row = 0; row < arr.length; row++) {
+			for (int col = 0; col < arr[0].length; col++) {
 				System.out.println(arr[row][col] + " ");
 			}
 			System.out.println();
 		}
 	}
-	
+
+	// Linear search for 2D Array
+	public void searchingValue(int value) {
+		for (int row = 0; row < arr.length; row++) {
+			for (int col = 0; col < arr[0].length; col++) {
+				if (arr[row][col] == value) {
+					System.out.println("Value is found at row: " + row + " Col: " + col);
+					return;
+				}
+			}
+		}
+		System.out.println("Value is not found");
+	}
+
 }

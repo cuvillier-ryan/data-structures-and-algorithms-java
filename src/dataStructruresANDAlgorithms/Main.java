@@ -26,6 +26,7 @@ public class Main {
 		
 		sda.traverse2DArray();
 		System.out.println(Arrays.deepToString(sda.arr));
+		sda.searchingValue(50);
 		
 	}	
 
