@@ -24,9 +24,10 @@ public class Main {
 		sda.insertValueInTheArray(1, 0, 30);
 		sda.insertValueInTheArray(2, 0, 40);
 		
-		sda.traverse2DArray();
+		
 		System.out.println(Arrays.deepToString(sda.arr));
-		sda.searchingValue(50);
+		sda.deleteValueFromArray(0, 0);
+		System.out.println(Arrays.deepToString(sda.arr));
 		
 	}	
 
