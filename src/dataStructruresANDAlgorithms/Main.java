@@ -32,6 +32,10 @@ public class Main {
 		int[] newArray = {1,2,3,4,5,7,8,9,10};
 		ArraysPract ap = new ArraysPract();
 		ap.missingNumber(newArray);
+		SinglyLinkedList sLL = new SinglyLinkedList();
+		sLL.createSinglyLinkedList(4);
+		System.out.println(sLL.head.value
+				);
 		
 	}	
 
