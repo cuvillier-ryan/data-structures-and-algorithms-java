@@ -29,6 +29,10 @@ public class Main {
 		sda.deleteValueFromArray(0, 0);
 		System.out.println(Arrays.deepToString(sda.arr));
 		
+		int[] newArray = {1,2,3,4,5,7,8,9,10};
+		ArraysPract ap = new ArraysPract();
+		ap.missingNumber(newArray);
+		
 	}	
 
 }

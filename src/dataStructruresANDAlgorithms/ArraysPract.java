@@ -26,6 +26,17 @@ public class ArraysPract {
 
 	}
 	
+	public void missingNumber(int[] intArray) {
+		int sum1 = 0;
+		int sum2 = 0;
+		
+		for(int i : intArray) {
+			sum1 += i;
+		}
+		sum2 = 10*(10+1)/2;
+		int difference = sum2 - sum1;
+		System.out.println("Missing number is: " + difference);
+	}
 
 
 }
