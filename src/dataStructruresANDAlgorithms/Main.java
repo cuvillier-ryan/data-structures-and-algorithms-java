@@ -54,7 +54,10 @@ public class Main {
 		g.addUndirectedEdge(3, 4);
 		System.out.println(g.toString());
 		
-		
+		BubbleSort bs = new BubbleSort();
+		int arr[] = {10,5,30,15,50,6};
+		bs.bubbleSort(arr);
+		bs.printArray(arr);
 	}	
 
 }
