@@ -56,10 +56,14 @@ public class Main {
 		BubbleSort bs = new BubbleSort();
 		int arr[] = { 10, 5, 30, 15, 50, 6 };
 		int myArr[] = { 6, 18, 78, 2, 4, 1, 9, 34 };
+		int mergeArr[] = { 10, 3, 2, 5, 8, 4, 3, 1, 2, 9, 7, 8 };
 		bs.bubbleSort(arr);
 		bs.printArray(arr);
 		SelectionSort.selectionSort(myArr);
 		SelectionSort.printArray(myArr);
+		MergeSort.mergeSort(mergeArr, 0, mergeArr.length - 1);
+		System.out.println();
+		MergeSort.printArray(mergeArr);
 
 	}
 
