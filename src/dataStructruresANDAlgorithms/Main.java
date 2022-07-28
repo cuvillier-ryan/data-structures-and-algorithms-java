@@ -18,25 +18,24 @@ public class Main {
 //		sda.searchInArray(20);
 //		sda.deleteInArray(2);
 //		System.out.println(sda.arr[2]);
-		
+
 		TwoDimensionalArray sda = new TwoDimensionalArray(3, 3);
 		sda.insertValueInTheArray(0, 0, 10);
 		sda.insertValueInTheArray(0, 1, 20);
 		sda.insertValueInTheArray(1, 0, 30);
 		sda.insertValueInTheArray(2, 0, 40);
-		
-		
+
 		System.out.println(Arrays.deepToString(sda.arr));
 		sda.deleteValueFromArray(0, 0);
 		System.out.println(Arrays.deepToString(sda.arr));
-		
-		int[] newArray = {1,2,3,4,5,7,8,9,10};
+
+		int[] newArray = { 1, 2, 3, 4, 5, 7, 8, 9, 10 };
 		ArraysPract ap = new ArraysPract();
 		ap.missingNumber(newArray);
 		SinglyLinkedList sLL = new SinglyLinkedList();
 		sLL.createSinglyLinkedList(4);
 		System.out.println(sLL.head.value);
-		
+
 		// Adjacency Matrix
 		ArrayList<GraphNode> nodeList = new ArrayList<GraphNode>();
 		nodeList.add(new GraphNode("A", 0));
@@ -44,7 +43,7 @@ public class Main {
 		nodeList.add(new GraphNode("C", 2));
 		nodeList.add(new GraphNode("D", 3));
 		nodeList.add(new GraphNode("E", 4));
-		
+
 		Graph g = new Graph(nodeList);
 		g.addUndirectedEdge(0, 1);
 		g.addUndirectedEdge(0, 2);
@@ -53,11 +52,15 @@ public class Main {
 		g.addUndirectedEdge(2, 3);
 		g.addUndirectedEdge(3, 4);
 		System.out.println(g.toString());
-		
+
 		BubbleSort bs = new BubbleSort();
-		int arr[] = {10,5,30,15,50,6};
+		int arr[] = { 10, 5, 30, 15, 50, 6 };
+		int myArr[] = { 6, 18, 78, 2, 4, 1, 9, 34 };
 		bs.bubbleSort(arr);
 		bs.printArray(arr);
-	}	
+		SelectionSort.selectionSort(myArr);
+		SelectionSort.printArray(myArr);
+
+	}
 
 }
